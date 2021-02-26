@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-80">
+    <title>Hugo RAMON PORTUGAL</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="banner" id="sec" onclick="survol()">
+        <header>
+            <a href="CV HUGO RAMON PORTUGAL 2021.pdf" target="_blank" class="logo">Curriculum vitae.</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+            <div class="content">
+            <h2>P<br>R<br>O<br><span>J<br>E<br>C<br>T<br>S</span></h2>
+            </div>
+    <div class="containerprojet">
+        <div class="boxprojet">
+            <div class="imgBxprojet">
+                <a href="https://virsart.com/" target="_blank"><img href="#" src="img/ViRs.JPG" width="675px" height="450px"></a>
+            </div>
+            <div class="contentBxprojet">
+                <h2>My compagny ViRs</h2>
+                <p>My loan brand
+                    porter street wear sold
+                    on my merchant site</p>
+            </div>
+        </div>
+        <div class="boxprojet">
+            <div class="imgBxprojet">
+                <a href="https://www.tchatche.com/" target="_blank"><img src="img/tchatche.jpg" width="675px" height="450px"></a>
+            </div>
+            <div class="contentBxprojet">
+                <h2>Tchatche application</h2>
+                <p>Application and website of
+                    meeting in the frame
+                    of my work-study</p>
+            </div>
+        </div>
+        <div class="boxprojet">
+            <div class="imgBxprojet">
+                <a href="https://ugoramoon.wixsite.com/ugoramoon" target="_blank"><img src="img/ugoramoon.jpg" width="675px" height="450px"></a>
+            </div>
+            <div class="contentBxprojet">
+                <h2>Personal Portefolio</h2>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div class="containerprojet">
+        <div class="boxprojet">
+            <div class="imgBxprojet">
+                <a href="#" target="_blank"><img src="img/gooey.PNG" width="675px" height="450px"></a>
+            </div>
+            <div class="contentBxprojet">
+                <h2>Gooey animation effect</h2>
+                <p></p>
+            </div>
+        </div>
+        <div class="boxprojet">
+            <div class="imgBxprojet">
+                <a href="http://bit.ly/testchaussure" target="_blank"><img src="img/running.png" width="675px" height="450px"></a>
+            </div>
+            <div class="contentBxprojet">
+                <h2>A quizz for basket</h2>
+                <p></p>
+            </div>
+        </div>
+        <div class="boxprojet">
+            <div class="imgBxprojet">
+                <a href="http://bit.ly/aleahugo" target="_blank"><img src="img/logo.gif" width="675px" height="450px"></a>
+            </div>
+            <div class="contentBxprojet">
+                <h2>Aléatoire.</h2>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</section>
+    <div id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="formations.html">Formations</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="hardskills.html">Hard Skills</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <div class="cursor"></div>
+        </ul>
+    </div>
+    <script type="text/javascript" src="./js/vanilla/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".boxprojet"), {
+		max: 25,
+		speed: 400
+	});
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+        function survol(){
+            const cursor = document.querySelector('.cursor');
+                    document.addEventListener('mousemove', (e) => {
+                        cursor.style.left = e.pageX + 'px';
+                        cursor.style.top = e.pageY + 'px'
+                    })
+        }
+    </script>
+</body>
+</html>

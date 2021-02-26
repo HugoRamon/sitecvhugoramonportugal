@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-80">
+    <title>Hugo RAMON PORTUGAL</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="banner" id="sec" onclick="survol()">
+        <header>
+            <a href="CV HUGO RAMON PORTUGAL 2021.pdf" target="_blank" class="logo">Curriculum vitae.</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+            <div class="content">
+                <h2>Contact <span>me</span></h2><br>
+                <p>The best thing to do is to meet.</p>
+            </div>
+            <div class="containerr">
+            <form action="index.html">
+                <div class="row100">
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span class="text">First Name</span>
+                            <span class="line"> </span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span class="text">Name</span>
+                            <span class="line"> </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row100">
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span class="text">Mail</span>
+                            <span class="line"> </span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="tel" name="" required="required">
+                            <span class="text">Mobile</span>
+                            <span class="line"> </span>
+                        </div>
+                    </div>
+                </div>
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox textarea">
+                        <textarea required="required"></textarea>
+                        <span class="text">Your message here</span>
+                        <span class="line"> </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row100">
+                <div class="col">
+                    <a href="index.html"><input type="submit" value="Send"></a>
+                </div>
+            </div>
+                </form>
+            </div>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="formations.html">Formations</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="hardskills.html">Hard Skills</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <div class="cursor"></div>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+        function survol(){
+            const cursor = document.querySelector('.cursor');
+                    document.addEventListener('mousemove', (e) => {
+                        cursor.style.left = e.pageX + 'px';
+                        cursor.style.top = e.pageY + 'px'
+                    })
+        }
+    </script>
+</body>
+</html>

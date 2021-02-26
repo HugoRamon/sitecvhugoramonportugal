@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-80">
+    <title>Hugo RAMON PORTUGAL</title>
+    <link rel="stylesheet" href="css/stylehard.css">
+</head>
+<body>
+    <section class="banner" id="sec" onclick="survol()">
+        <header>
+            <a href="CV HUGO RAMON PORTUGAL 2021.pdf" target="_blank" class="logo">Curriculum vitae.</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+            <div class="content">
+            <h2>H<br>A<br>R<br>D<br><span>S<br>K<br>I<br>L<br>L<br>S</span></h2>
+            </div>
+            <div class="containerhard">
+                <div class="cardhard">
+                  <div class="boxhard">
+                    <div>
+                    <div class="percenthard">
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="number">
+                        <h2>80<span>%</span></h2>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <img src="img/htmllogo.png" width="110%">
+                  </div>
+                </div>
+                <div class="cardhard">
+                  <div class="boxhard">
+                    <div>
+                    <div class="percenthard">
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="number">
+                        <h2>70<span>%</span></h2>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <img src="img/csslogo.png" width="80%">
+                  </div>
+                </div>
+                <div class="cardhard">
+                  <div class="boxhard">
+                    <div>
+                    <div class="percenthard">
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="number">
+                        <h2>70<span>%</span></h2>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <img src="img/jslogo.png" width="80%">
+                  </div>
+                </div>
+                <div class="cardhard">
+                  <div class="boxhard">
+                    <div>
+                    <div class="percenthard">
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="number">
+                        <h2>60<span>%</span></h2>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <img src="img/phplogo.png" width="110%">
+                  </div>
+                </div>
+                <div class="cardhard">
+                  <div class="boxhard">
+                    <div>
+                    <div class="percenthard">
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="number">
+                        <h2>80<span>%</span></h2>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <img src="img/adobexdlogo.png" width="80%">
+                  </div>
+                </div>
+                <div class="cardhard">
+                  <div class="boxhard">
+                    <div>
+                    <div class="percenthard">
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="number">
+                        <h2>40<span>%</span></h2>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <img src="img/wordpresslogo.png" width="80%">
+                  </div>
+                </div>
+              </div>
+</section>
+    <div id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="formations.html">Formations</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="hardskills.html">Hard Skills</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <div class="cursor"></div>
+        </ul>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".boxprojet"), {
+		max: 25,
+		speed: 400
+	});
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+        function survol(){
+            const cursor = document.querySelector('.cursor');
+                    document.addEventListener('mousemove', (e) => {
+                        cursor.style.left = e.pageX + 'px';
+                        cursor.style.top = e.pageY + 'px'
+                    })
+        }
+    </script>
+</body>
+</html>

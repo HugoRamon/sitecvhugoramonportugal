@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-80">
+    <title>Hugo RAMON PORTUGAL</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="banner" id="sec" onclick="survol()">
+        <header>
+            <a href="CV HUGO RAMON PORTUGAL 2021.pdf" target="_blank" class="logo">Curriculum vitae.</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+            <div class="wrapper">
+                <h2>Welcome, I'm<br><span></span></h2><br>
+                <p>Need to develop your digital communication or your website ?</p><br>
+                <a href="code.txt">See my code responsive</a>
+            </div>
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/hugo.ramonportugal"><img src="img/facebook.png"></a></li>
+                <li><a href="https://www.instagram.com/hugoramonportugal/"><img src="img/instagram.png"></a></li>
+                <li><a href="https://www.linkedin.com/in/hugo-ramon-portugal-764549195/"><img src="img/linkedin.png"></a></li>
+                <li><a href="mailto:hugo.ramonportugal@free.fr"><img src="img/mail.png"></a></li>
+            </ul>
+        </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="formations.html">Formations</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="hardskills.html">Hard Skills</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <div class="cursor"></div>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        };
+        function survol(){
+            const cursor = document.querySelector('.cursor');
+                    document.addEventListener('mousemove', (e) => {
+                        cursor.style.left = e.pageX + 'px';
+                        cursor.style.top = e.pageY + 'px'
+                    })
+        }
+    </script>
+</body>
+</html>

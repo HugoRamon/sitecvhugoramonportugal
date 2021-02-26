@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-80">
+    <title>Hugo RAMON PORTUGAL</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section class="banner" id="sec" onclick="survol()">
+      <header>
+        <a href="CV HUGO RAMON PORTUGAL 2021.pdf" target="_blank" class="logo">Curriculum vitae.</a>
+        <div id="toggle" onclick="toggle()"></div>
+      </header>
+          <div class="content">
+              <h2>F<br>O<br>R<br>M<br>A<span><br>T<br>I<br>O<br>N<br>S</span></h2>
+          </div>
+          <div class="timeline">
+            <div id="scroll">
+              <div id="main">
+            <div class="container left">
+              <div class="content">
+                <h2>Bachelor Digital</h2>
+                <h3>2021-2020</h3>
+                <p>Digital communication, UX/IU Design, SEO, SEA, Management, Graphics, SCRUM</p><br>
+                <img src="img/img1.gif" width="90%">
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>IUT IT</h2>
+                <h3>2020-2018</h3>
+                <p>Front-end and back-end development, Business creation option</p><br>
+                <img src="img/img2.PNG" width="100%">
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <h2>Scientific baccalaureate</h2>
+                <h3>2015-2018</h3>
+                <p>Mention AB, Option sciences de
+                  engineer, Mathematics specialty</p><br>
+                <img src="img/img3.PNG" width="100%">
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>Certificate of Aptitude for the Functions of Facilitator</h2>
+                <h3>2018</h3>
+                <p>Public specialty in difficulty and with disabilities</p><br>
+                <img src="img/img4.PNG" width="100%">
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <h2>Permis B with car</h2>
+                <h3>2019</h3>
+                <p>In real life I just have a twingo but hey it's black too</p><br>
+                <img src="img/img5.PNG" width="100%">
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>PSC 1 - First aid diploma</h2>
+                <h3>2017</h3>
+                <p></p><br>
+                <img src="img/img6.PNG" width="100%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <div id="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="formations.html">Formations</a></li>
+      <li><a href="experiences.html">Experiences</a></li>
+      <li><a href="hardskills.html">Hard Skills</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <div class="cursor"></div>
+    </ul>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+  <script src="js/jquery/page_scroll_indicator.js"></script>
+  <script>        PageScrollIndicator.createProgressBar("#scroll", "#main");</script>
+  <script type="text/javascript">
+      function toggle(){
+          var sec = document.getElementById('sec');
+          var nav = document.getElementById('navigation');
+          sec.classList.toggle('active');
+          nav.classList.toggle('active');
+      }
+      function survol(){
+            const cursor = document.querySelector('.cursor');
+                    document.addEventListener('mousemove', (e) => {
+                        cursor.style.left = e.pageX + 'px';
+                        cursor.style.top = e.pageY + 'px'
+                    })
+        }
+  </script>
+</body>
+</html>
